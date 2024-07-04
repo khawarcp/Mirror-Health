@@ -1398,9 +1398,31 @@
     "name": "Sample Kit Product",
     "settings": [
       {
+        "type": "text",
+        "id": "sample_heading",
+        "label": "Heading",
+        "default": "Find your ring size"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "sample_subheading",
+        "label": "Subheading",
+        "default": "Find your perfect fit with our free Ring Sizing Kit — no guesswork needed."
+      },
+      {
         "type": "product",
         "id": "sample_kit_product",
         "label": "Product"
+      },
+      {
+        "type": "header",
+        "content": "Ring Size"
+      },
+      {
+        "type": "text",
+        "id": "ring_size_heading",
+        "label": "Heading",
+        "default": "Your Ring Size"
       }
     ]
   },

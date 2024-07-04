@@ -201,14 +201,18 @@
                     {{ product.description }}
                   </div>
                 {%- endif -%}
-              {%- when 'description' -%}                
+              {%- when 'ring_size' -%}                
                 {% if settings.sample_kit_product != empty %}
                     <div class="ring-sizes-block" {{ block.shopify_attributes }}>
                       <div class="sizing-kit-wrapper">
                            {%  assign sample_product = all_products[settings.sample_kit_product] %}
                             <input type="hidden" id="free-product-id" value="{{ sample_product.selected_or_first_available_variant.id }}">
-                            <h2>Find your ring size</h2>
-                            <p>Find your perfect fit with our free Ring Sizing Kit — no guesswork needed.</p>
+                            {% if section.sample_heading != blank %}
+                              <h2> {{ section.sample_heading }} </h2>                    
+                            {% endif %}
+                            {% if section.sample_subheading != blank %}
+                              <p>{{ section.sample_subheading }}</p>                    
+                            {% endif %}
                             <div class="sizing-kit">
                               <span class="tag desktop">RECOMMENDED</span>
                                 <input type="radio" id="ring-sample-kit" form="{{ product_form_id }}" name="properties[Ring Size]" value="Size Not Confirmed" >
@@ -229,15 +233,14 @@
 
                         <div class="ring-sizes-block">
                           <div class="line-item-property__field">
-                            <label>Your Ring Size</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-6" name="properties[Ring Size]" value="06"> <label for="your-ring-size-6">06</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-7" name="properties[Ring Size]" value="07"> <label for="your-ring-size-7">07</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-8" name="properties[Ring Size]" value="08"> <label for="your-ring-size-8">08</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-9" name="properties[Ring Size]" value="09"> <label for="your-ring-size-9">09</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-10" name="properties[Ring Size]" value="10"> <label for="your-ring-size-10">10</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-11" name="properties[Ring Size]" value="11"> <label for="your-ring-size-11">11</label>
-                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-12" name="properties[Ring Size]" value="12"> <label for="your-ring-size-12">12</label>
-                            <input type="radio" form="{{ product_form_id }}" id="your-ring-size-13" name="properties[Ring Size]" value="13"> <label for="your-ring-size-13">13</label>
+                            {% if settings.ring_size_heading != blank %}
+                            <h4> {{ settings.ring_size_heading }} </h4>
+                            {% endif %}
+                            {% for size in product.metafields.custom.ring_size_reference.value %}
+                              {% if size.ring_size.value %}
+                              <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-{{ size.ring_size.value }}" name="properties[Ring Size]" value="{{ size.ring_size.value }}"> <label for="your-ring-size-{{ size.ring_size.value }}">{{ size.ring_size.value }}</label>
+                            {% endif %}
+                          {% endfor %}
                           </div>
                         </div>
                     </div>

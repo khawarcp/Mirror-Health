@@ -20,16 +20,21 @@
             "swatch_shape": "square"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "ring_size_PAKHyw": {
+          "type": "ring_size",
           "settings": {
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
           }
         },
         "description": {
           "type": "description",
           "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         }
       },
@@ -37,8 +42,9 @@
         "title",
         "price",
         "variant_picker",
-        "buy_buttons",
-        "description"
+        "ring_size_PAKHyw",
+        "description",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
