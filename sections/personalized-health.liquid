@@ -1,0 +1,93 @@
+<section class="get-rcmnd">
+    <div class="container">
+        <div class="rcmnd-cntnt">
+            <div class="rcmnd-bnr">
+                {% render 'image-snippet', image: section.settings.image, lazyload: 'eager'  %}
+            </div>
+            <div class="rcmnd-hlth-dta flex justify-between">
+                <div class="get-hlth">
+                    <h2>{{ section.settings.section_heading }}</h2>
+                    {{ section.settings.section_brief }}
+
+                    {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+                </div>
+
+
+                <!-- Swiper -->
+                <div class="swiper-container rcmnd-hlth-lnk">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            <div class="swiper-slide rcmn-lnk-card">
+                                <a href="#.">
+                                    <div class="prfom-rcmnd">
+                                        <h2>{{ block.settings.block_heading }}</h2>
+                                        {{ block.settings.block_description }}
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Personalized Health",
+    "settings": [
+      {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Choose Image"
+      },
+      {
+        "type":"text",
+        "id":"section_heading",
+        "label":"Section Heading"
+      },
+      {
+        "type":"richtext",
+        "id":"section_brief",
+        "label":"Section Brief"
+      },
+      {
+        "type":"url",
+        "id":"button_url",
+        "label":"Button URL"
+      },
+      {
+        "type":"text",
+        "id":"button_text",
+        "label":"Button Text"
+      },
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Slide",
+        "settings": [
+          {
+            "type":"text",
+            "id":"block_heading",
+            "label":"Slide Heading"
+          },
+          {
+            "type":"richtext",
+            "id":"block_description",
+            "label":"Slide Brief"
+          }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Personalized Health"
+        }
+    ]
+  }
+{% endschema %}

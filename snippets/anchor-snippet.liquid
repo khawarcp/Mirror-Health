@@ -1,0 +1,3 @@
+{% if button_text != blank %}    
+<a href="{{ button_url | default: "#." }}" {% if title %} title="{{ title }}" {% endif %} class="{{ class }}"> {{ button_text }} </a>
+{% endif %}

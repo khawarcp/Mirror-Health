@@ -97,6 +97,12 @@ variant-selects {
   color: rgb(var(--color-background));
 }
 
+.product-form__input--swatch .swatch-input__input+.swatch-input__label.ring-size{
+  --swatch-input--size: 8rem;
+  background-color: #F0F6FC;
+}
+
+
 @media screen and (forced-colors: active) {
   .product-form__input--pill input[type='radio']:checked + label {
     text-decoration: underline;

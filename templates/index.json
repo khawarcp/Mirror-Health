@@ -1,75 +1,325 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "hero_banner_nWhWGH": {
+      "type": "hero-banner",
+      "settings": {
+        "section_heading": "The <span>Mirror Ring<\/span>",
+        "section_brief": "<p>Peace of mind about your health from just a ring on your finger<\/p>",
+        "image": "shopify:\/\/shop_images\/hme-bnr.png",
+        "banner_bg_heading": "Introducing",
+        "button_url": "#.",
+        "button_text": "Buy Now",
+        "offer_text": "Just $349 or $29\/mo.*",
+        "subscription_text": "No Subscript cost."
+      }
+    },
+    "health_status_MJQyhJ": {
+      "type": "health-status",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "block_8rBVkV": {
+          "type": "block",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "tab_nav_image": "shopify:\/\/shop_images\/heart.svg",
+            "tab_nav_name": "Heart",
+            "tab_body_icon": "shopify:\/\/shop_images\/heart.svg",
+            "tab_body_heading": "Your Heart Score",
+            "tab_body_description": "<p>Our sensors help you understand what is happening with your heart through our Beats Per Minute (BPM), Resting Heart Rate (RHR), Heart Rate Variability (HRV), and Blood Pressure (BP*) measurements. Get a comprehensive Heart Score and recommendations on how to improve.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "Bem",
+            "tab_body_link_two_url": "",
+            "tab_body_link_two_text": "hrv",
+            "tab_body_link_three_url": "#,",
+            "tab_body_link_three_text": "rhr",
+            "tab_body_link_four_url": "#,",
+            "tab_body_link_four_text": "BP* (Coming Soon)",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/helth-dta.png"
           }
         },
-        "button": {
-          "type": "buttons",
+        "block_bE3diH": {
+          "type": "block",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "tab_nav_image": "shopify:\/\/shop_images\/activ.svg",
+            "tab_nav_name": "Activity",
+            "tab_body_icon": "shopify:\/\/shop_images\/activ.svg",
+            "tab_body_heading": "Your Activity Score",
+            "tab_body_description": "<p>Activity is so much more than how many steps you take in a day. Using our proprietary ActiveZone technology, we are able to give you a comprehensive activity score, and show you how it is improving other aspects of your health.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "Activity Score",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "Heart Rate Zones",
+            "tab_body_link_three_url": "",
+            "tab_body_link_three_text": "",
+            "tab_body_link_four_url": "",
+            "tab_body_link_four_text": "",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-2.png"
+          }
+        },
+        "block_7kemkB": {
+          "type": "block",
+          "settings": {
+            "tab_nav_image": "shopify:\/\/shop_images\/immune.svg",
+            "tab_nav_name": "Immune System",
+            "tab_body_icon": "shopify:\/\/shop_images\/immune.svg",
+            "tab_body_heading": "Your Immunity Score",
+            "tab_body_description": "<p>Using our temperature sensors combined with \u2028HRV, stress and sleep data, we are able to show unparalleled information about your immune system. Know when to rest and take it easy or when you are ready for the day ahead.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "HRV",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "Sleep",
+            "tab_body_link_three_url": "#.",
+            "tab_body_link_three_text": "Stress",
+            "tab_body_link_four_url": "",
+            "tab_body_link_four_text": "",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-3.png"
+          }
+        },
+        "block_FJimrh": {
+          "type": "block",
+          "settings": {
+            "tab_nav_image": "shopify:\/\/shop_images\/stress.svg",
+            "tab_nav_name": "Stress",
+            "tab_body_icon": "shopify:\/\/shop_images\/stress.svg",
+            "tab_body_heading": "Your Stress Score",
+            "tab_body_description": "<p>Stress has a huge impact on overall health. Using heart rate and temperature information we are able to give important information about your stress so you can identify triggers, know how to stay calm, and manage stress.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "BPM",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "HRV",
+            "tab_body_link_three_url": "#.",
+            "tab_body_link_three_text": "Temperature",
+            "tab_body_link_four_url": "",
+            "tab_body_link_four_text": "",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-4.png"
+          }
+        },
+        "block_etMWrw": {
+          "type": "block",
+          "settings": {
+            "tab_nav_image": "shopify:\/\/shop_images\/lngs.svg",
+            "tab_nav_name": "Respiratory",
+            "tab_body_icon": "shopify:\/\/shop_images\/lngs.svg",
+            "tab_body_heading": "Your Respiratory Score",
+            "tab_body_description": "<p>Our sensors help you understand your \u2028respiratory health through Blood Oxygen (SpO2), VO2 Max, and Respiratory Rate measurements. \u2028The Vera Ring helps you discover how efficiently your body is intaking oxygen and gives you recommendations to improve respiratory function.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "SpO2",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "VO2 Max",
+            "tab_body_link_three_url": "#.",
+            "tab_body_link_three_text": "Respiratory Rate",
+            "tab_body_link_four_url": "",
+            "tab_body_link_four_text": "",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-5.png"
+          }
+        },
+        "block_PMbtJk": {
+          "type": "block",
+          "settings": {
+            "tab_nav_image": "shopify:\/\/shop_images\/slp.svg",
+            "tab_nav_name": "Sleep",
+            "tab_body_icon": "shopify:\/\/shop_images\/slp.svg",
+            "tab_body_heading": "Your Sleep Score",
+            "tab_body_description": "<p>Sleep is one of the most important daily \u2028activities that determine your short and long term health. Track everything about your sleep cycles that are broken down into segments. Know your Sleep Duration, Time Awake, and Light, Deep Sleep and Rapid Eye Movement (REM) sleep cycles. <\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "Duration",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "Light Sleep",
+            "tab_body_link_three_url": "#.",
+            "tab_body_link_three_text": "Deep Sleep",
+            "tab_body_link_four_url": "#.",
+            "tab_body_link_four_text": "REM",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-6.png"
+          }
+        },
+        "block_EacQeP": {
+          "type": "block",
+          "settings": {
+            "tab_nav_image": "shopify:\/\/shop_images\/menstrual.svg",
+            "tab_nav_name": "Menstrual",
+            "tab_body_icon": "shopify:\/\/shop_images\/menstrual.svg",
+            "tab_body_heading": "Your Menstrual Cycle Tracker",
+            "tab_body_description": "<p>The menstrual cycle is unique to everyone and influences fertility, activity, sleep, hormones, immune system, and many other aspects of life. Know about your cycle and be aware of changes as they happen.<\/p>",
+            "tab_body_link_one_url": "#.",
+            "tab_body_link_one_text": "BPM",
+            "tab_body_link_two_url": "#.",
+            "tab_body_link_two_text": "RHR",
+            "tab_body_link_three_url": "#.",
+            "tab_body_link_three_text": "Temperature Trends",
+            "tab_body_link_four_url": "",
+            "tab_body_link_four_text": "",
+            "tab_body_link_five_url": "",
+            "tab_body_link_five_text": "",
+            "tab_body_image": "shopify:\/\/shop_images\/heart-6.png"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "block_8rBVkV",
+        "block_bE3diH",
+        "block_7kemkB",
+        "block_FJimrh",
+        "block_etMWrw",
+        "block_PMbtJk",
+        "block_EacQeP"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "section_heading": "Know the Status of Your Health at All Times",
+        "section_brief": "<p>Vera Ring gives you a 360 degree view of your health through 6 main health categories. Know about the status of your heart, respiratory system, sleep cycles, immune system, stress levels, and activity, 24\/7.<\/p>",
+        "button_url": "#",
+        "button_text": "Buy Now"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "personalized_health_PTmKy3": {
+      "type": "personalized-health",
+      "blocks": {
+        "block_3FecxF": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Perform Aerobic Exercises",
+            "block_description": "<p>Engage in aerobic exercises such as jogging, cycling, or walking to increase VO2 max.<\/p>"
+          }
+        },
+        "block_tPwfRc": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Do Breathing Exercise",
+            "block_description": "<p>Perform 10 respiration exercises during times of high stress to increase oxygen saturation (SpO2) and slow down heart rate (BPM).<\/p>"
+          }
+        },
+        "block_E68k9i": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Remain Active",
+            "block_description": "<p>Maintain Active Zone BPM for 30 minutes daily to decrease resting heart rate (RHR)<\/p>"
+          }
+        },
+        "block_xr7pQQ": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Get Adequate Sleep",
+            "block_description": "<p>Get 7-8 hours of sleep daily to boost your immune system. Insufficient sleep can weaken the immune system, making you more susceptible to infections.<\/p>"
+          }
+        },
+        "block_DWkUrD": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Perform Aerobic Exercises",
+            "block_description": "<p>Engage in aerobic exercises such as jogging, cycling, or walking to increase VO2 max.<\/p>"
+          }
+        },
+        "block_V7xrDt": {
+          "type": "block",
+          "settings": {
+            "block_heading": "Remain Active",
+            "block_description": "<p>Maintain Active Zone BPM for 30 minutes daily to decrease resting  heart rate (RHR).<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_3FecxF",
+        "block_tPwfRc",
+        "block_E68k9i",
+        "block_xr7pQQ",
+        "block_DWkUrD",
+        "block_V7xrDt"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/rcmnd-bnr.png",
+        "section_heading": "Get Personalized Health Recommendations",
+        "section_brief": "<p>Mirror Health gives you personalized recommendations to improve your health. Within each health category our algorithmic understanding of how your body works will tell you just how to improve a specific aspect of your health.<\/p>",
+        "button_url": "#.",
+        "button_text": "Learn More"
+      }
+    },
+    "all_rings_DTgAFV": {
+      "type": "all-rings",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/all-rings.png"
+      }
+    },
+    "emergency_alerts_DRHyPm": {
+      "type": "emergency-alerts",
+      "blocks": {
+        "block_WYTVaf": {
+          "type": "block",
+          "settings": {
+            "alert_link": "#.",
+            "alert_icon": "shopify:\/\/shop_images\/heart_a94e9d0a-0533-4e5a-affc-04e9c285a49f.svg",
+            "alert_heading": "Heart",
+            "alert_number": "59",
+            "alert_about": "high RHR",
+            "bar_chart": "shopify:\/\/shop_images\/h-1.svg"
+          }
+        },
+        "block_4b4Rad": {
+          "type": "block",
+          "settings": {
+            "alert_link": "#.",
+            "alert_icon": "shopify:\/\/shop_images\/lngs.svg",
+            "alert_heading": "Respiratory",
+            "alert_number": "67",
+            "alert_about": "Low Sleep SpO2",
+            "bar_chart": "shopify:\/\/shop_images\/h-2.svg"
+          }
+        },
+        "block_wwMKfU": {
+          "type": "block",
+          "settings": {
+            "alert_link": "#.",
+            "alert_icon": "shopify:\/\/shop_images\/immune_c32b597f-736e-416b-92ae-c4f661d47579.svg",
+            "alert_heading": "Immune System",
+            "alert_number": "47",
+            "alert_about": "Low Sleep\"",
+            "bar_chart": "shopify:\/\/shop_images\/h-3.svg"
+          }
+        }
+      },
+      "block_order": [
+        "block_WYTVaf",
+        "block_4b4Rad",
+        "block_wwMKfU"
+      ],
+      "settings": {
+        "section_heading": "Learn About Ailments, Before They Become Real Issues",
+        "section_brief": "<p>Our advanced Artificial Intelligence algorithms learn about your health and can predict small variabilities in advance before they become real issues. Additionally, get emergency alerts in times of extreme drops or spikes in vital readings and share with your family or friends.<\/p>",
+        "button_url": "#.",
+        "button_text": "Buy Now",
+        "emergency_alerts": "Receive Emergency Alerts",
+        "alert_link": "#.",
+        "alert_icon": "shopify:\/\/shop_images\/Moon.svg",
+        "alert_heading": "Sleep",
+        "alert_number": "37",
+        "alert_about": "low REM Sleep",
+        "bar_chart": "shopify:\/\/shop_images\/bar-chart.svg"
+      }
+    },
+    "subscription_cost_Gd3nDn": {
+      "type": "subscription-cost",
+      "settings": {
+        "section_heading": "Zero Subscription Cost",
+        "section_brief": "<p>We believe when you buy products, it's yours to keep by now.<\/p>",
+        "button_url": "#.",
+        "button_text": "Buy Now"
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero_banner_nWhWGH",
+    "health_status_MJQyhJ",
+    "personalized_health_PTmKy3",
+    "all_rings_DTgAFV",
+    "emergency_alerts_DRHyPm",
+    "subscription_cost_Gd3nDn"
   ]
 }

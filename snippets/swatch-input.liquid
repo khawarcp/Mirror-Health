@@ -42,11 +42,12 @@
     {{ additional_props }}
   {% endif %}
 >
+
 <label
   for="{{ id }}"
   title="{{ value }}"
-  class="swatch-input__label{% if shape == 'square' %} swatch-input__label--square{% endif %}"
+  class="swatch-input__label{% if shape == 'square' %} swatch-input__label--square{% endif %} {% if option_color_name == 'select-your-ring-color' %}ring-size{% endif %}"
 >
-  {% render 'swatch', swatch: swatch, shape: shape %}
+  {% render 'swatch', swatch: swatch, shape: shape, color_name: option_color_name %}
   {{ help_text }}
 </label>

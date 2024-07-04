@@ -1,0 +1,26 @@
+<section class="all-ring">
+  <div class="container">
+      <div class="all-ring-img">
+          {% render 'image-snippet', image: section.settings.image, lazyload: 'eager'  %}
+      </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Custom Single Image",
+    "settings": [
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Choose Image"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Custom Single Image"    
+      }
+    ]
+  }
+{% endschema %}

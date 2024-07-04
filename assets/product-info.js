@@ -175,6 +175,9 @@ if (!customElements.get('product-info')) {
             return;
           }
 
+
+          console.log("variant: " ,variant)
+
           this.updateMedia(html, variant?.featured_media?.id);
 
           const updateSourceFromDestination = (id, shouldHide = (source) => false) => {

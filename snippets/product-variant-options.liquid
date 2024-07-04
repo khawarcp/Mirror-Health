@@ -47,6 +47,10 @@
     {{ option.name }}-{{ option.position }}
   {%- endcapture -%}
 
+  {%- capture option_color_name -%}
+    {{- option.name |  handleize -}}
+  {%- endcapture -%}
+
   {%- capture input_dataset -%}
     data-product-url="{{ value.product_url }}"
     data-option-value-id="{{ value.id }}"
@@ -60,13 +64,18 @@
 
   {%- if picker_type == 'swatch' -%}
     {%- capture help_text -%}
+    {% if option_color_name == 'select-your-ring-color' %}
+      <h5>{{ value | escape }}</h5>
+    {% else %}
       <span class="visually-hidden">{{ value | escape }}</span>
+    {% endif %}
       {{ label_unavailable }}
     {%- endcapture -%}
     {%
       render 'swatch-input',
       id: input_id,
       name: input_name,
+      option_color_name: option_color_name,
       value: value | escape,
       swatch: value.swatch,
       product_form_id: product_form_id,

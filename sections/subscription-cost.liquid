@@ -1,0 +1,46 @@
+<section class="pre-order">
+    <div class="pre-lyer">
+        <div class="container">
+            <div class="order-contnet">
+               <h3>{{ section.settings.section_heading }}</h3>
+                {{ section.settings.section_brief }}
+                {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Subscription Cost",
+    "settings": [
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+        {
+          "type":"url",
+          "id":"button_url",
+          "label":"Button URL"
+        },
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Subscription Cost"
+      }
+    ]
+  }
+{% endschema %}

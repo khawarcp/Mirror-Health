@@ -1,0 +1,181 @@
+<section class="learn">
+    <div class="container">
+        <div class="learn-cntnt">
+            <div class="learn-txt">
+                <h2>{{ section.settings.section_heading }}</h2>
+                {{ section.settings.section_brief }}
+                {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+            </div>
+
+            <div class="emg-alrt">
+                <h3>{{ section.settings.emergency_alerts }}</h3>
+
+                <div class="emg-alrt-crd-sec">
+                    <div class="emg-alrt-crd">
+                        <a href="{{ section.settings.alert_link }}">
+                            <div class="emg-sleep">
+                                <div class="sleep-img">
+                                    <img src="{{ section.settings.alert_icon | img_url : 'master' }}" alt="#">
+                                    <h6>{{ section.settings.alert_heading }}</h6>
+                                </div>
+
+                                <div class="alrt-slp" data-target="37">
+                                    <h4>{{ section.settings.alert_number }}</h4>
+                                    <p>Alert</p>
+                                </div>
+
+                                <div class="rem">
+                                    <img src="{{ 'alert.svg' | asset_url }}" alt="#">
+                                    <p>{{ section.settings.alert_about }}</p>
+                                </div>
+
+                                <div class="bar-chart">
+                                    <img src="{{ section.settings.bar_chart | img_url : 'master' }}" alt="#">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="emg-rght-crd">
+                        {% for block in section.blocks %}
+                            <div class="emg-alrt-crd hrt-emg-crd">
+                                <a href="{{ block.settings.alert_link }}">
+                                    <div class="emg-sleep">
+                                        <div class="sleep-img">
+                                            <img src="{{ block.settings.alert_icon | img_url : 'master' }}" alt="#">
+                                            <h6>{{ block.settings.alert_heading }}</h6>
+                                        </div>
+
+                                        <div class="alrt-slp" data-target="59">
+                                            <h4>{{ block.settings.alert_number }}</h4>
+                                            <p>Alert</p>
+                                        </div>
+
+                                        <div class="rem">
+                                            <img src="{{ 'alert.svg' | asset_url }}" alt="#">
+                                            <p>{{ block.settings.alert_about }}</p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="bar-chart">
+                                        <img src="{{ block.settings.bar_chart | img_url : 'master' }}" alt="#">
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Emergency Alerts",
+    "settings": [
+        {   
+            "type":"text",
+            "id":"section_heading",
+            "label":"Section Heading"
+        },
+        {
+            "type":"richtext",
+            "id":"section_brief",
+            "label":"Section Brief"
+        },
+        {
+            "type":"url",
+            "id":"button_url",
+            "label":"Button URL"
+        },
+        {
+            "type":"text",
+            "id":"button_text",
+            "label":"Button Text"
+        },
+        {   
+            "type":"text",
+            "id":"emergency_alerts",
+            "label":"Emergency Alerts Heading"
+        },
+        {
+            "type":"url",
+            "id":"alert_link",
+            "label":"Alert Link",
+        },
+        {
+            "type":"image_picker",
+            "id":"alert_icon",
+            "label":"Alert Icon",
+        },
+        {
+            "type":"text",
+            "id":"alert_heading",
+            "label":"Alert Heading",
+        },
+        {
+            "type":"text",
+            "id":"alert_number",
+            "label":"Alert Number",
+        },
+        {
+            "type":"text",
+            "id":"alert_about",
+            "label":"Alert About",
+        },
+        {
+            "type":"image_picker",
+            "id":"bar_chart",
+            "label":"Bar Chart",
+        }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+            {
+                "type":"url",
+                "id":"alert_link",
+                "label":"Alert Link",
+            },
+            {
+                "type":"image_picker",
+                "id":"alert_icon",
+                "label":"Alert Icon",
+            },
+            {
+                "type":"text",
+                "id":"alert_heading",
+                "label":"Alert Heading",
+            },
+            {
+                "type":"text",
+                "id":"alert_number",
+                "label":"Alert Number",
+            },
+            {
+                "type":"text",
+                "id":"alert_about",
+                "label":"Alert About",
+            },
+            {
+                "type":"image_picker",
+                "id":"bar_chart",
+                "label":"Bar Chart",
+            }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Emergency Alerts"
+        }
+    ]
+  }
+{% endschema %}

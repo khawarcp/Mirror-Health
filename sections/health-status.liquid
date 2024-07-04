@@ -1,0 +1,188 @@
+<section class="helth-status">
+    <div class="container">
+        <div class="hlth-stat-cntnt">
+            <div class="hlth-stat-txt">
+                <h2>{{ section.settings.section_heading }}</h2>
+                {{ section.settings.section_brief }}
+                <div class="hme-buy">
+                    {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+                </div>
+            </div>
+
+            <!-- Tabbing -->
+
+            <div class="tab-block" id="tab-block">
+
+                <ul class="tab-mnu">
+                    {% for block in section.blocks %}
+                      <li class="active">
+                          <img src="{{ block.settings.tab_nav_image | img_url : 'master' }}" alt="#">
+                          <p>{{ block.settings.tab_nav_name }}</p>
+                      </li>
+                    {% endfor %}
+                </ul>
+
+                <div class="tab-cont">
+                  {% for block in section.blocks %}
+                    <div class="tab-pane">
+                        <div class="hrt-scr-dta flex">
+                            <div class="hrt-scr-txt">
+                                <div class="hrt-scr-hed">
+                                    <img src="{{ block.settings.tab_body_icon | img_url : 'master' }}" alt="#">
+                                    <h2>{{ block.settings.tab_body_heading }}</h2>
+                                </div>
+                                {{ block.settings.tab_body_description }}
+                                <div class="hrt-dta">
+                                    {% if block.settings.tab_body_link_one_text !=blank %}
+                                       <a href="{{ block.settings.tab_body_link_one_url }}">{{ block.settings.tab_body_link_one_text }}</a>
+                                    {% endif %}
+                                    {% if block.settings.tab_body_link_two_text !=blank %}
+                                       <a href="{{ block.settings.tab_body_link_two_url }}">{{ block.settings.tab_body_link_two_text }}</a>
+                                    {% endif %}
+                                    {% if block.settings.tab_body_link_three_text !=blank %}
+                                       <a href="{{ block.settings.tab_body_link_three_url }}">{{ block.settings.tab_body_link_three_text }}</a>
+                                    {% endif %}
+                                    {% if block.settings.tab_body_link_four__text !=blank %}
+                                       <a href="{{ block.settings.tab_body_link_four_url }}">{{ block.settings.tab_body_link_four__text }}</a>
+                                    {% endif %}
+                                    {% if block.settings.tab_body_link_five_text !=blank %}
+                                       <a href="{{ block.settings.tab_body_link_five_url }}">{{ block.settings.tab_body_link_five_text }}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="hrt-scr-img">
+                              {% if block.settings.tab_body_image !=blank %}
+                                <img src="{{ block.settings.tab_body_image | img_url : 'master' }}" alt="#">
+                              {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                  {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Health Status",
+    "settings": [
+      {
+        "type":"text",
+        "id":"section_heading",
+        "label":"Section Heading"
+      },
+      {
+        "type":"richtext",
+        "id":"section_brief",
+        "label":"Section Brief"
+      },
+      {
+        "type":"url",
+        "id":"button_url",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"button_text",
+        "label":"Button Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Tab",
+        "settings": [
+          {
+            "type":"image_picker",
+            "id":"tab_nav_image",
+            "label":"Tab Nav Image"
+          },
+          {
+            "type":"text",
+            "id":"tab_nav_name",
+            "label":"Tab Nav Name"
+          },
+          {
+            "type":"image_picker",
+            "id":"tab_body_icon",
+            "label":"Tab Body Icon"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_heading",
+            "label":"Tab Body Heading"
+          },
+          {
+            "type":"richtext",
+            "id":"tab_body_description",
+            "label":"Tab Body Description"
+          },
+          {
+            "type":"url",
+            "id":"tab_body_link_one_url",
+            "label":"Tab Body Link One"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_link_one_text",
+            "label":"Tab Body Link One Text"
+          },
+          {
+            "type":"url",
+            "id":"tab_body_link_two_url",
+            "label":"Tab Body Link Two"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_link_two_text",
+            "label":"Tab Body Link Two Text"
+          },
+          {
+            "type":"url",
+            "id":"tab_body_link_three_url",
+            "label":"Tab Body Link Three"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_link_three_text",
+            "label":"Tab Body Link Three Text"
+          },
+          {
+            "type":"url",
+            "id":"tab_body_link_four_url",
+            "label":"Tab Body Link Four"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_link_four_text",
+            "label":"Tab Body Link Text Four"
+          },
+          {
+            "type":"url",
+            "id":"tab_body_link_five_url",
+            "label":"Tab Body Link Five"
+          },
+          {
+            "type":"text",
+            "id":"tab_body_link_five_text",
+            "label":"Tab Body Link Five Text"
+          },
+          {
+            "type":"image_picker",
+            "id":"tab_body_image",
+            "label":"Tab Body Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Health Status"
+      }
+    ]
+  }
+{% endschema %}

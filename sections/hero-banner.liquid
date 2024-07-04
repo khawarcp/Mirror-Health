@@ -1,0 +1,78 @@
+<section class="hme-banner">
+    <div class="container"  >
+        <div class="hme-bnr-cntnt">
+            <div class="hme-bnr-text">
+                <h1>{{ section.settings.section_heading }}</h1>
+                {{ section.settings.section_brief }}
+            </div>
+
+            <div class="hme-bnr-img">
+                {% render 'image-snippet', image: section.settings.image, lazyload: 'eager'  %}
+                <h2>{{ section.settings.banner_bg_heading }}</h2>
+            </div>
+
+            <div class="hme-buy">
+                {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+                <h4>{{ section.settings.offer_text }}</h4>
+                <p>{{ section.settings.subscription_text }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Hero Banner",
+    "settings": [
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Choose Image"
+        },
+        {
+          "type":"text",
+          "id":"banner_bg_heading",
+          "label":"Banner Bg Heading"
+        },
+        {
+          "type":"url",
+          "id":"button_url",
+          "label":"Button URL"
+        },
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        },
+        {
+          "type":"text",
+          "id":"offer_text",
+          "label":"Offer Text"
+        },
+        {
+          "type":"text",
+          "id":"subscription_text",
+          "label":"Subscription Text"
+        },
+    ],
+    "presets": [
+      {
+        "name": "Hero Banner"    
+      }
+    ]
+  }
+{% endschema %}
