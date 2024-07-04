@@ -1,0 +1,51 @@
+{% assign product = all_products[section.settings.product] %}
+{% if product != empty %}
+    <section class="available-colors">
+        <div class="container">
+            <div class="clr-headline">
+                {% if section.settings.heading != blank %}                
+                    <h2> {{ section.settings.heading }} </h2>
+                {% endif %}
+            </div>
+            <div class="available-colors-flex">                
+                {% for variant in product.variants %}
+                    {% if variant.id %}                    
+                        <div class="available-colors-sub">
+                            {%- assign image_alt = variant.featured_image.alt |  default : product.selected_or_first_available_variant.featured_image.alt -%}
+                            {% render 'image-snippet', image: variant.featured_image, alt: image_alt, width: '430', height: '450' %}
+                            <span class="clr1"></span>
+                            <div class="available-colors-btns">
+                                <h4> {{ variant.title }} </h4>
+                                <a href="{{ variant.url }}">Buy Now</a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% schema %}
+    {
+        "name" : "Prdouct Colors",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Available Colors"
+            },
+            {
+                "type": "product",
+                "id": "product",
+                "label": "Product"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Product Colors"
+            }
+        ]
+    }
+{% endschema %}

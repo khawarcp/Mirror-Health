@@ -7,7 +7,14 @@
             <div class="in-box-images">
                 <div class="product-accessories">
                     <div class="product-accessoriesBox">
-                        <img src="{{ section.settings.image |  image_url: width: 1320  }}" alt="{{ section.settings.image.alt }}" height="" width="1320" loading="lazy">
+                        {% liquid
+                            if product.selected_or_first_available_variant.metafields.custom.ring_hero_image != blank
+                              assign variant_box_image  = product.selected_or_first_available_variant.metafields.custom.ring_hero_image |  image_url
+                            else
+                              assign variant_box_image  = section.settings.image |  image_url
+                            endif
+                        %}
+                        <img id="variant-box-image" src="{{ variant_box_image }}" alt="{{ variant_box_image.alt }}" height="" width="1320" loading="eager">
                     </div>
                 </div>
             </div>

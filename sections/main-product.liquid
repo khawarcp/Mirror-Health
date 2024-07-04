@@ -201,6 +201,47 @@
                     {{ product.description }}
                   </div>
                 {%- endif -%}
+              {%- when 'description' -%}                
+                {% if settings.sample_kit_product != empty %}
+                    <div class="ring-sizes-block" {{ block.shopify_attributes }}>
+                      <div class="sizing-kit-wrapper">
+                           {%  assign sample_product = all_products[settings.sample_kit_product] %}
+                            <input type="hidden" id="free-product-id" value="{{ sample_product.selected_or_first_available_variant.id }}">
+                            <h2>Find your ring size</h2>
+                            <p>Find your perfect fit with our free Ring Sizing Kit — no guesswork needed.</p>
+                            <div class="sizing-kit">
+                              <span class="tag desktop">RECOMMENDED</span>
+                                <input type="radio" id="ring-sample-kit" form="{{ product_form_id }}" name="properties[Ring Size]" value="Size Not Confirmed" >
+                                <label for="ring-sample-kit">
+                                  <div class="button-content">
+                                    <div class="img">
+                                      <img alt="Sizing Kit" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="sizing-kit-img" style="color: transparent; background: transparent;" src="{{ sample_product.featured_image |  image_url }}">
+                                    </div>
+                                    <div class="content">
+                                      <span class="tag mobile" style="position:static;width:fit-content">RECOMMENDED</span>
+                                      <h5> {{ sample_product.title }} </h5>
+                                      <div class="richtext-content"> {{ sample_product.description }} </div>
+                                    </div>
+                                  </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="ring-sizes-block">
+                          <div class="line-item-property__field">
+                            <label>Your Ring Size</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-6" name="properties[Ring Size]" value="06"> <label for="your-ring-size-6">06</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-7" name="properties[Ring Size]" value="07"> <label for="your-ring-size-7">07</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-8" name="properties[Ring Size]" value="08"> <label for="your-ring-size-8">08</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-9" name="properties[Ring Size]" value="09"> <label for="your-ring-size-9">09</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-10" name="properties[Ring Size]" value="10"> <label for="your-ring-size-10">10</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-11" name="properties[Ring Size]" value="11"> <label for="your-ring-size-11">11</label>
+                            <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-12" name="properties[Ring Size]" value="12"> <label for="your-ring-size-12">12</label>
+                            <input type="radio" form="{{ product_form_id }}" id="your-ring-size-13" name="properties[Ring Size]" value="13"> <label for="your-ring-size-13">13</label>
+                          </div>
+                        </div>
+                    </div>
+                  {% endif %}
               {%- when 'sku' -%}
                 <p
                   class="product__sku{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -720,6 +761,15 @@
   </div>
 </product-info>
 
+<script id="variant_box_image" type="application/json">
+    {
+        {%- for variant in product.variants -%}
+          {%- assign ring_hero_image = variant.metafields.custom.ring_hero_image -%}
+          "{{ variant.id }}" : "{{ ring_hero_image |  image_url  }}" {%  unless forloop.last %}, {% endunless %}           
+        {%- endfor -%}
+    }
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
@@ -840,6 +890,11 @@
           "default": true
         }
       ]
+    },
+    {
+      "type": "ring_size",
+      "name": "Ring Size",
+      "limit": 1
     },
     {
       "type": "quantity_selector",

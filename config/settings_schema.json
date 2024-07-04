@@ -1395,6 +1395,16 @@
     ]
   },
   {
+    "name": "Sample Kit Product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "sample_kit_product",
+        "label": "Product"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {

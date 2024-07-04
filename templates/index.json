@@ -312,6 +312,13 @@
         "button_url": "#.",
         "button_text": "Buy Now"
       }
+    },
+    "index_product_colors_GCLrAq": {
+      "type": "index-product-colors",
+      "settings": {
+        "heading": "Available Colors",
+        "product": "the-mirror-ring-1"
+      }
     }
   },
   "order": [
@@ -320,6 +327,7 @@
     "personalized_health_PTmKy3",
     "all_rings_DTgAFV",
     "emergency_alerts_DRHyPm",
-    "subscription_cost_Gd3nDn"
+    "subscription_cost_Gd3nDn",
+    "index_product_colors_GCLrAq"
   ]
 }

@@ -45,6 +45,13 @@ if (!customElements.get('product-form')) {
         fetch(`${routes.cart_add_url}`, config)
           .then((response) => response.json())
           .then((response) => {
+
+            // ADDING FREE PRODUCT SAMPLE SIZE KIT
+            const sampleInputCheck = document.getElementById("ring-sample-kit");
+            if(sampleInputCheck.checked){
+              freeSampleKitProduct();
+            }
+
             if (response.status) {
               publish(PUB_SUB_EVENTS.cartError, {
                 source: 'product-form',
@@ -130,4 +137,33 @@ if (!customElements.get('product-form')) {
       }
     }
   );
+}
+
+function freeSampleKitProduct(){
+  // adding free product to cart
+    const sampleProductId = document.getElementById("free-product-id").value;
+    console.log(sampleProductId)
+    let sampleFormData = {
+      'items': [{
+        'id': sampleProductId,
+        'quantity': 1
+      }]
+    };
+    
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(sampleFormData)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
 }
