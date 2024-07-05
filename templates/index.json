@@ -313,11 +313,355 @@
         "button_text": "Buy Now"
       }
     },
+    "loved_ones_WyhNad": {
+      "type": "loved-ones",
+      "blocks": {
+        "block_KUTEXR": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Dad.png",
+            "person_relation": "Dad",
+            "person_health_card": "shopify:\/\/shop_images\/DadHealthVital.png"
+          }
+        },
+        "block_NGrkNd": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Mom.png",
+            "person_relation": "Mom",
+            "person_health_card": "shopify:\/\/shop_images\/MomHealthVitals.png"
+          }
+        },
+        "block_6FxPWL": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Kate.png",
+            "person_relation": "Kate",
+            "person_health_card": "shopify:\/\/shop_images\/KateHealthVital.png"
+          }
+        },
+        "block_EzGL4J": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Emily.png",
+            "person_relation": "Emily",
+            "person_health_card": "shopify:\/\/shop_images\/EmilyHealthVital.png"
+          }
+        },
+        "block_3jMVhh": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Frank.png",
+            "person_relation": "Frank",
+            "person_health_card": "shopify:\/\/shop_images\/FrankHealthVital.png"
+          }
+        },
+        "block_c9XeM3": {
+          "type": "block",
+          "settings": {
+            "person_image": "shopify:\/\/shop_images\/Me.png",
+            "person_relation": "Me",
+            "person_health_card": "shopify:\/\/shop_images\/MomHealthVitals.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_KUTEXR",
+        "block_NGrkNd",
+        "block_6FxPWL",
+        "block_EzGL4J",
+        "block_3jMVhh",
+        "block_c9XeM3"
+      ],
+      "settings": {
+        "section_heading": "Stay In The Know With Your Loved Ones",
+        "section_brief": "<p>Family and community is a pillar of the Vera Health ecosystem. Share and receive your live health dashboard with your loved ones to stay up to date and get peace of mind. You can share how much or how little information you want to share.<\/p>",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
+        "button_text": "Buy Now"
+      }
+    },
+    "rings_slideshow_Fe4R6w": {
+      "type": "rings-slideshow",
+      "blocks": {
+        "block_Vq3CWa": {
+          "type": "block",
+          "settings": {
+            "ring_image": "shopify:\/\/shop_images\/re1.png"
+          }
+        },
+        "block_LAYx3p": {
+          "type": "block",
+          "settings": {
+            "ring_image": "shopify:\/\/shop_images\/re2.png"
+          }
+        },
+        "block_NWUxXY": {
+          "type": "block",
+          "settings": {
+            "ring_image": "shopify:\/\/shop_images\/re3.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_Vq3CWa",
+        "block_LAYx3p",
+        "block_NWUxXY"
+      ],
+      "settings": {
+        "section_heading": "Mirror Ring"
+      }
+    },
+    "perfect_factor_bf6ehP": {
+      "type": "perfect-factor",
+      "blocks": {
+        "block_cREhJr": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-1.png",
+            "row_heading": "Seamless design blending with your look",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision. The Vera Ring also has skin temperature sensors and a 6-axis accelerometer.<\/p>",
+            "row_buy_link": "#."
+          }
+        },
+        "block_zWzYU3": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-2.png",
+            "row_heading": "Breathtakingly Light",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision.<\/p>",
+            "row_buy_link": "#."
+          }
+        },
+        "block_m86BL6": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-3.png",
+            "row_heading": "All Week Battery Life",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision.<\/p>",
+            "row_buy_link": "#."
+          }
+        },
+        "block_bBNHAg": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-4.png",
+            "row_heading": "Completely Waterproof and Durable",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision.<\/p>",
+            "row_buy_link": "#."
+          }
+        },
+        "block_yTnd8N": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-5.png",
+            "row_heading": "Premium Grade Materials",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision.<\/p>",
+            "row_buy_link": "#."
+          }
+        },
+        "block_zFKhhw": {
+          "type": "block",
+          "settings": {
+            "row_image": "shopify:\/\/shop_images\/form-image-6.png",
+            "row_heading": "Sleek and Customizable",
+            "row_description": "<p>With Mirror Prism Technology PPG sensors, detect your vitals with precision.<\/p>",
+            "row_buy_link": "#."
+          }
+        }
+      },
+      "block_order": [
+        "block_cREhJr",
+        "block_zWzYU3",
+        "block_m86BL6",
+        "block_bBNHAg",
+        "block_yTnd8N",
+        "block_zFKhhw"
+      ],
+      "settings": {
+        "section_heading": "The Perfect Form Factor",
+        "section_brief": "<p>Wear the Vera Ring seamlessly complements your daily outfits in a sleek manner. Aircraft-grade build material can handle all day-to day tasks and our medical grade sensors track your vitals like the best equipment out there.<\/p>"
+      }
+    },
+    "focused_professional_KBkT6N": {
+      "type": "focused-professional",
+      "settings": {
+        "section_heading": "Focused on Professional Grade Precision",
+        "section_brief": "<p>With <strong>Mirror Prism Technology<\/strong> PPG sensors, detect your vitals with precision. The Vera Ring also has skin temperature sensors and a 6-axis accelerometer.<\/p>",
+        "background_image": "shopify:\/\/shop_images\/focused-professional.png"
+      }
+    },
+    "software_focus_NHt9jU": {
+      "type": "software-focus",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/soft2.png",
+        "section_heading": "Our deep focus on software, allows us to create new and innovative ways to make use of the data brought in by our sensors.",
+        "section_brief": "<p>We have worked extensively with our medical board alongside our team of world-class data scientists and engineers to create the most accurate and actionable recommendations from the data.<\/p>",
+        "product_image": "shopify:\/\/shop_images\/soft.png"
+      }
+    },
+    "health_mission_e3HCRn": {
+      "type": "health-mission",
+      "settings": {
+        "mission_image": "shopify:\/\/shop_images\/mission-image.png",
+        "section_heading": "Mission Of Mirror Health",
+        "section_brief": "<p>The future of health is here. Modern day healthcare has done a great job of creating reactive medicine. We have made strides in drug discoveries, performing life saving surgeries, and innovating on medical devices that fix our problems. The next frontier of a healthier society is predictive and preventative healthcare, which begins with knowing your health. Your health is like a complex machine, operating with many intricacies and interconnected systems. Just like how every car has a dashboard, every machine has a way to monitor its operations. Vera enables you to monitor your health, in real time, and all times.<\/p><p>Vera strives to further push the boundaries of healthcare by thoroughly learning about your unique health. Then, innovating on the information learned to create predictive insights and eventually preventative measurements for any health crisis. The era of basing your health on feelings or once-a-year checkups is coming to an end. You deserve to know how your health is, based on accurate and objective data, and at all times.<\/p><p>Join us in building the future of health.<\/p>",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
+        "button_text": "Buy Now"
+      }
+    },
+    "leading_professionals_PC69hV": {
+      "type": "leading-professionals",
+      "blocks": {
+        "block_ULn3PA": {
+          "type": "block",
+          "settings": {
+            "medical_professional_image": "shopify:\/\/shop_images\/medical-professional-1.png",
+            "medical_professional_name": "Dr. Arash Nayeri",
+            "medical_professional_designation": "MD, Cardiologist",
+            "medical_professional_description": "<p>We have worked with Dr. Nayeri to understand the limitations of wearable technology and how we can. <a href=\"#.\" title=\"#.\">read more<\/a><\/p>"
+          }
+        },
+        "block_7fAe8i": {
+          "type": "block",
+          "settings": {
+            "medical_professional_image": "shopify:\/\/shop_images\/medical-professional-2.png",
+            "medical_professional_name": "Amy Vespa",
+            "medical_professional_designation": "CNS, Health Coach",
+            "medical_professional_description": "<p>We have worked with Ms. Vespa to understand how wearables can be used to drive a healthier life. She. <a href=\"#.\" title=\"#.\">read more<\/a><\/p>"
+          }
+        },
+        "block_dpeNf3": {
+          "type": "block",
+          "settings": {
+            "medical_professional_image": "shopify:\/\/shop_images\/medical-professional-3.png",
+            "medical_professional_name": "Dr. Kasra Tayebi",
+            "medical_professional_designation": "MD",
+            "medical_professional_description": "<p>We have worked with Dr. Tayebi on creating our health categories and will continue working with him to. <a href=\"#.\" title=\"#.\">read more<\/a><\/p>"
+          }
+        },
+        "block_APygGK": {
+          "type": "block",
+          "settings": {
+            "medical_professional_image": "shopify:\/\/shop_images\/medical-professional-4.png",
+            "medical_professional_name": "Diana Rojas",
+            "medical_professional_designation": "PA, Manhattan Cardiology",
+            "medical_professional_description": "<p>We will work with Ms. Rojas to understand all the important metrics checked during usual. <a href=\"#.\" title=\"#.\">read more<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_ULn3PA",
+        "block_7fAe8i",
+        "block_dpeNf3",
+        "block_APygGK"
+      ],
+      "settings": {
+        "flag_icon": "shopify:\/\/shop_images\/flag.svg",
+        "flag_details": "The Mirror Ring is one of the only Smart Ring companies based in the U.S.A.",
+        "section_heading": "Created With Speciality Leading Medical Professionals",
+        "section_brief": "<p>The Vera Ring was created in collaboration with some of the best medical professionals and academics in their fields.<\/p>"
+      }
+    },
     "index_product_colors_GCLrAq": {
       "type": "index-product-colors",
       "settings": {
         "heading": "Available Colors",
         "product": "the-mirror-ring-1"
+      }
+    },
+    "founder_message_PGAUfD": {
+      "type": "founder-message",
+      "settings": {
+        "section_heading": "Message <br> from the Founders",
+        "section_brief": "<p>We started Vera Health last year after speaking to many family members and friends and realizing that the current wearables on the market could benefit them in ways that they currently aren’t.<\/p><p>We saw that most if not all of the wearables on the market are being used for the purposes of optimizing fitness and wellness. We came together and envisioned a better and more impactful application of this technology for those around us – developing a wearable centered around health.<\/p>",
+        "button_url": "#.",
+        "button_text": "Read More",
+        "image_one": "shopify:\/\/shop_images\/msg1.png",
+        "image_two": "shopify:\/\/shop_images\/msg2.png"
+      }
+    },
+    "specifications_table_4HFDBY": {
+      "type": "specifications-table",
+      "blocks": {
+        "block_4fgdfg": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Dimensions",
+            "specification_description": "<p>~2.3mm Thick, ~7.5mm Wide<\/p>"
+          }
+        },
+        "block_tXTU63": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Weight",
+            "specification_description": "<p>5.2 To 8.5 Grams (Depending on Size)<\/p>"
+          }
+        },
+        "block_DtLFTc": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Battery life",
+            "specification_description": "<p>~7 Days per Charge, The Charging Case Holds 30 Additional Days Worth of Battery Life (And is Rechargeable)<\/p>"
+          }
+        },
+        "block_qpJVqw": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Connectivity details",
+            "specification_description": "<p>Bluetooth 4.0<\/p>"
+          }
+        },
+        "block_xw6mh8": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Colors",
+            "specification_description": "<p>Vera Blue, Pure White, Onyx Black, Silver, Gold, Rose Gold<\/p>"
+          }
+        },
+        "block_DExRBA": {
+          "type": "block",
+          "settings": {
+            "specification_text": "PPG Sensors",
+            "specification_description": "<p>Green, Red, Infrared<\/p>"
+          }
+        },
+        "block_WXE7rH": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Other Sensors",
+            "specification_description": "<p>Skin Temperature, 6-Axis Accelerometer<\/p>"
+          }
+        },
+        "block_AtxAUb": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Vitals Monitored",
+            "specification_description": "<p>Beats Per Minute (BPM), Heart Rate Variability (HRV), Resting Heart Rate (RHR), Blood Pressure (BP* - Coming Soon), Sleep Duration, Light Sleep, Deep Sleep, Rapid Eye Movement (REM) Sleep, Blood Oxygen Saturation (SpO2), VO2 Max, Respiratory Rate, Skin Temperature (In Celsius or Fahrenheit), Fertility Tracking (Coming Soon)<\/p>"
+          }
+        },
+        "block_YN7qrj": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Additional Features",
+            "specification_description": "<p>Vera Health Forum, Family Health Sharing, Health Recommendations, Health Shock Alerts, Waterproof, Shock Resistant<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_4fgdfg",
+        "block_tXTU63",
+        "block_DtLFTc",
+        "block_qpJVqw",
+        "block_xw6mh8",
+        "block_DExRBA",
+        "block_WXE7rH",
+        "block_AtxAUb",
+        "block_YN7qrj"
+      ],
+      "settings": {
+        "section_bg": "shopify:\/\/shop_images\/specifications-bg.png",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
+        "button_text": "Buy Now"
       }
     }
   },
@@ -328,6 +672,15 @@
     "all_rings_DTgAFV",
     "emergency_alerts_DRHyPm",
     "subscription_cost_Gd3nDn",
-    "index_product_colors_GCLrAq"
+    "loved_ones_WyhNad",
+    "rings_slideshow_Fe4R6w",
+    "perfect_factor_bf6ehP",
+    "focused_professional_KBkT6N",
+    "software_focus_NHt9jU",
+    "health_mission_e3HCRn",
+    "leading_professionals_PC69hV",
+    "index_product_colors_GCLrAq",
+    "founder_message_PGAUfD",
+    "specifications_table_4HFDBY"
   ]
 }

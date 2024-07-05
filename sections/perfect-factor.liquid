@@ -1,0 +1,80 @@
+<section class="mirror-ring">
+  <div class="container">
+    <div class="perfect-form-headline">
+        <h3>{{ section.settings.section_heading }}</h3>
+        {{ section.settings.section_brief }}
+    </div>
+    <div class="factors-all">
+      {% for block in section.blocks %}
+        <div class="factors-sub fac-{{ forloop.index }}" style="background-image: url({{ block.settings.row_image | img_url : 'master' }});">
+            <div class="factors-sub-headline">
+                <h2>{{ block.settings.row_heading }}</h2>
+                <div class="factors-sub-contnet">
+                    {{ block.settings.row_description }}
+                    <div class="factors-sub-contnet-link">
+                        <a class="head-buy" href="{{ block.settings.row_buy_link }}">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="plus-icon">
+                <img src="{{ 'plus.svg' | asset_url }}" alt="Icon">
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Perfect Factor",
+    "settings": [
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Row",
+        "settings": [
+          {
+            "type":"image_picker",
+            "id":"row_image",
+            "label":"Choose Image"
+          },
+          {
+            "type":"text",
+            "id":"row_heading",
+            "label":"Heading"
+          },
+          {
+            "type":"richtext",
+            "id":"row_description",
+            "label":"Description"
+          },
+          {
+            "type":"url",
+            "id":"row_buy_link",
+            "label":"Buy Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Perfect Factor"
+      }
+    ]
+  }
+{% endschema %}

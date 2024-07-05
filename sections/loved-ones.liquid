@@ -1,0 +1,90 @@
+<section class="stay-withLovedOnes">
+    <div class="container">
+        <div class="stay-withLovedOnesMainContainer">
+            <h2>{{ section.settings.section_heading }}</h2>
+                {{ section.settings.section_brief }}
+                {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+            <div class="tabbing--container">
+
+                <ul class="tabs">
+                    {% for block in section.blocks %}
+                        <li class="tab-link" data-tab="tab-{{ forloop.index }}">
+                            <img src="{{ block.settings.person_image | img_url : 'master'}}" alt="">
+                            <span>{{ block.settings.person_relation }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <ul class="tabs-content">
+                    {% for block in section.blocks %}
+                        <li id="tab-{{ forloop.index }}" class="tab-content ">
+                            <img src="{{ block.settings.person_health_card | img_url : 'master'}}" alt="">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Health Alerts",
+    "settings": [
+        {
+            "type":"text",
+            "id":"section_heading",
+            "label":"Section Heading"
+        },
+        {
+            "type":"richtext",
+            "id":"section_brief",
+            "label":"Section Brief"
+        },
+        {
+            "type":"url",
+            "id":"button_url",
+            "label":"Button URL"
+        },
+        {
+            "type":"text",
+            "id":"button_text",
+            "label":"Button Text"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type":"image_picker",
+            "id":"person_image",
+            "label":"Person Avatar Image"
+          },
+          {
+            "type":"text",
+            "id":"person_relation",
+            "label":"Person Relation"
+          },
+          {
+            "type":"image_picker",
+            "id":"person_health_card",
+            "label":"Person Health Alert Card"
+          },
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "Health Alerts"
+        }
+    ]
+  }
+{% endschema %}

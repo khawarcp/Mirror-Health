@@ -1,0 +1,35 @@
+<section class="Professional" style="background-image: url({{ section.settings.background_image | img_url : 'master' }});">
+    <div class="container">
+        <h2>{{ section.settings.section_heading }}</h2>
+        {{ section.settings.section_brief }}
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Focused Professional",
+    "settings": [
+      {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+        {
+          "type":"image_picker",
+          "id":"background_image",
+          "label":"Choose Image"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Focused Professional"
+      }
+    ]
+  }
+{% endschema %}

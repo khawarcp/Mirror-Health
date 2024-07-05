@@ -1,0 +1,70 @@
+<section class="dimen-sec" style="background-image: url({{ section.settings.section_bg | img_url : 'master' }});">
+    <div class="container">
+        <div class="dimen-cntnt">
+            <div class="dimen-dta">
+                {% for block in section.blocks %}
+                  <div class="dimen-txt flex justify-between">
+                      <h3>{{ block.settings.specification_text }}</h3>
+                      {{ block.settings.specification_description }}
+                  </div>
+                {% endfor %}
+            </div>
+            {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Specifications Table",
+    "settings": [
+        {
+          "type":"image_picker",
+          "id":"section_bg",
+          "label":"Section Background Image"
+        },
+        {
+          "type":"url",
+          "id":"button_url",
+          "label":"Button URL"
+        },
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Specifiaction Row",
+        "settings": [
+          {
+            "type":"text",
+            "id":"specification_text",
+            "label":"Specifiaction Name"
+          },
+          {
+            "type":"richtext",
+            "id":"specification_description",
+            "label":"Specifiaction Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+        {
+           "name": "Specifications Table"
+        }
+    ]
+  }
+{% endschema %}

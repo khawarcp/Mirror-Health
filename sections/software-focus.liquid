@@ -1,0 +1,43 @@
+<section class="software-allow" style="background-image: url({{ section.settings.background_image | img_url : 'master' }});">
+    <div class="container">
+        <div class="software-contnet">
+            <h3>{{ section.settings.section_heading }}</h3>
+            {{ section.settings.section_brief }}
+            <img src="{{ section.settings.product_image | img_url : 'master' }}" alt="Image">
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Software Focus",
+    "settings": [
+        {
+          "type":"image_picker",
+          "id":"background_image",
+          "label":"Choose Image"
+        },
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+        {
+          "type":"image_picker",
+          "id":"product_image",
+          "label":"Choose Image"
+        },
+    ],
+    "presets": [
+      {
+        "name": "Software Focus"
+      }
+    ]
+  }
+{% endschema %}

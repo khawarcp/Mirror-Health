@@ -1,0 +1,49 @@
+<section class="mirror-ring">
+    <div class="container">
+        <div class="mirror-headline">
+            <h2>{{ section.settings.section_heading }}</h2>
+        </div>
+    </div>
+    <div class="ring-re1 owl-carousel owl-theme">
+        {% for block in section.blocks %}
+          <div class="item">
+              <div class="mirror-images">
+                  <img src="{{ block.settings.ring_image | img_url : 'master'}}" alt="">
+              </div>
+          </div>
+        {% endfor %}
+    </div>
+ </section>
+
+
+
+{% schema %}
+  {
+    "name": "Rings Slideshow",
+    "settings": [
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Image Slide",
+        "settings": [
+          {
+            "type":"image_picker",
+            "id":"ring_image",
+            "label":"Choose Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rings Slideshow"
+      }
+    ]
+  }
+{% endschema %}

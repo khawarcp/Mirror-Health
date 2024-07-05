@@ -1,0 +1,62 @@
+<section class="message-from">
+    <div class="container">
+        <div class="message-from-flex">
+            <div class="message-from-contnet">
+                <h3>{{ section.settings.section_heading }}</h3>
+                {{ section.settings.section_brief }}
+                {% render 'anchor-snippet', class: 'head-buy', button_text: section.settings.button_text, button_url: section.settings.button_url %}
+                <img src="{{ section.settings.image_one | img_url : 'master' }}" alt="Image">
+            </div>
+            <div class="message-from-image">
+                <img src="{{ section.settings.image_two | img_url : 'master' }}" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Founder Message",
+    "settings": [
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        },
+        {
+          "type":"url",
+          "id":"button_url",
+          "label":"Button URL"
+        },
+        {
+          "type":"text",
+          "id":"button_text",
+          "label":"Button Text"
+        },
+        {
+          "type":"image_picker",
+          "id":"image_one",
+          "label":"Choose Image"
+        },
+        {
+          "type":"image_picker",
+          "id":"image_two",
+          "label":"Choose Image"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Founder Message"
+        }
+    ]
+  }
+{% endschema %}

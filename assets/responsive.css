@@ -7,6 +7,14 @@
         margin-top: 60px;
         border-radius: 24px;
     }
+  .product.product--medium.product--left {
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+}
+  .product-media-container.constrain-height .media {
+    padding-top: var(--ratio-percent);
+}
 
 }
 
@@ -23,6 +31,10 @@
         max-width: 100%;
         padding: 0 40px;
     }
+  .product-form__input--swatch .swatch-input__label.swatch-input__label--square.ring-size {
+    width: 100%;
+    max-width: 31%;
+}
 
 }
 
@@ -99,6 +111,12 @@
     .rcmnd-hlth-dta {
         gap: 40px;
     }
+
+
+      .product-form__input--swatch .swatch-input__label.swatch-input__label--square.ring-size {
+        width: 100%;
+        max-width: 31%;
+    }
 }
 
 
@@ -118,6 +136,20 @@
     .Professional {
         min-height: 600px;
     }
+       .product-form__input--swatch .swatch-input__label.swatch-input__label--square.ring-size {
+        width: 100%;
+        max-width: 30%;
+    }
+  .product__info-wrapper {
+    max-width: 50% !important;
+    padding: 38px 40px 0 44px !important;
+}
+  .swatch-input__label.swatch-input__label--square.ring-size span {
+    margin: auto;
+    width: 100%;
+    max-width: 80px;
+}
+  
 }
 
 
@@ -406,6 +438,17 @@
     ul.tabs li:last-child {
         left: 5%;
     }
+
+
+
+  .product__title h1 {
+    font-size: 40px;
+    margin-bottom: 0px !important;
+}
+  #price-template--16851034112093__main {
+    margin: 0 0 0px !important;
+}
+  
 }  
 
 
@@ -538,6 +581,48 @@
         margin-top: 100px;
         max-width: 50%;
     }
+      .product__info-wrapper {
+        max-width: 50% !important;
+        padding: 30px 30px 0 20px !important;
+    }
+  .product-form__input--swatch .swatch-input__label.swatch-input__label--square.ring-size {
+        width: 100%;
+        max-width: 47%;
+    }
+
+  .product__title h1 {
+        font-size: 32px;
+        margin-bottom: 0 !important;
+    }
+  .product__tax {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.product__tax a, .product__tax {
+    font-size: 16px;
+}
+  .form__label {
+    font-size: 18px;
+    margin-bottom: 20px !important;
+    padding-top: 20px;
+}
+  .button-content .img img {
+    width: 100%;
+    max-width: 100%;
+    min-height: fit-content;
+    object-fit: cover;
+}
+  .content h5 {
+    font-size: 16px;
+  }
+  .content .richtext-content p {
+    font-size: 14px;
+  }
+  .ring-sizes-block h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
 
 }
 
@@ -961,6 +1046,96 @@
     .tab-mnu li p{
         font-size: 12px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .product.product--medium.product--left.product--stacked.product--mobile-hide.grid.grid--1-col.grid--2-col-tablet {
+    display: flex;
+    flex-direction: column;
+}
+
+.product--medium:not(.product--no-media) .product__media-wrapper, .product--small:not(.product--no-media) .product__info-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    /* padding-right: 0 !important; */
+}
+
+.product__info-wrapper {
+    max-width: 100% !important;
+    padding: 0 20px !important;
+    display: flex;
+    flex-direction: column;
+}
+  .slider--mobile:after {
+    padding-left: 0 !important;
+}
+
+.slider.slider--mobile {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 10px !important;
+    scroll-padding-left: 0 !important;
+}
+  .product__media-wrapper slider-component:not(.thumbnail-slider--no-slide) {
+    margin-left: 0 !important;
+    margin-right: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+      .grid--peek.slider .grid__item:first-of-type {
+        margin: 0 20px !important;
+        padding-top: 0 !important;
+    }
+      .product__title h1 {
+        font-size: 24px;
+      }
+      .product-form__input--swatch .swatch-input__label.swatch-input__label--square.ring-size {
+        width: 100%;
+        max-width: 28%;
+    }
+      .swatch-input__label.swatch-input__label--square.ring-size span {
+        margin: auto;
+        width: 100%;
+        max-width: 40px;
+    }
+  .swatch-input__label.swatch-input__label--square.ring-size h5 {
+    font-size: 12px;
+  }
+  .tag.desktop {
+    font-size: 12px !important;
+    right: 10px !important;
+    top: 10px !important;
+}
+  .ring-sizes-block {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 !important;
+}
+  .content .richtext-content p {
+        font-size: 12px;
+    }
+  .ring-sizes-block .line-item-property__field label {
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+  .product__description.rte.quick-add-hidden {
+    margin: 20px 0;
+}
+  .product__description.rte.quick-add-hidden ul li {
+    font-size: 16px;
+    margin-top: 12px;
+}
 
 }
 

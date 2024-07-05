@@ -121,7 +121,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-
+    $('ul.tabs li:first-child').addClass('current');
+    $('ul.tabs-content li:first-child').addClass('current');
     $('ul.tabs li').click(function () {
         var tab_id = $(this).attr('data-tab');
 
@@ -322,3 +323,30 @@ var swiper = new Swiper('.swiper-container', {
     }
 });
 
+// PDP Slider
+
+ $('#in-box-slider').owlCarousel({
+            loop: true,
+            margin: 60,
+            dots: false,
+            nav: false,
+            items: 2,
+            responsive: {
+                0: {
+                    items: 1,  // 1 item for screens from 0px to 480px
+                    margin: 10
+                },
+                480: {
+                    items: 2,  // 2 items for screens from 480px to 768px
+                    margin: 20
+                },
+                768: {
+                    items: 2,  // 3 items for screens from 768px to 1024px
+                    margin: 30
+                },
+                1024: {
+                    items: 2,  // 4 items for screens above 1024px
+                    margin: 60
+                }
+            }
+        });

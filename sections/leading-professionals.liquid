@@ -1,0 +1,96 @@
+<section class="mission">
+    <div class="container">
+        <div class="mirror-ring-f1">
+            <span class="f-line1"></span>
+            <div class="flg-content">
+                <img src="{{ section.settings.flag_icon | img_url : 'master' }}" alt="Icon">
+                <p>{{ section.settings.flag_details }}</p>
+            </div>
+            <span class="f-line2"></span>
+        </div>
+        <div class="medical-professionals-headline">
+            <h2>{{ section.settings.section_heading }}</h2>
+            {{ section.settings.section_brief }}
+        </div>
+
+    </div>
+    <div class="medical-professionals-slides">
+        <div class="medical owl-carousel owl-theme">
+            {% for block in section.blocks %}
+                <div class="item medical-item-{{ forloop.index }}">
+                    <div class="medical-professionals-sub">
+                        <img src="{{ block.settings.medical_professional_image | img_url : 'master' }}" alt="Image">
+                        <h3>{{ block.settings.medical_professional_name }}</h3>
+                        <h5>{{ block.settings.medical_professional_designation }}</h5>
+                        {{ block.settings.medical_professional_description }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Leading Professionals",
+    "settings": [
+        {
+          "type":"image_picker",
+          "id":"flag_icon",
+          "label":"Choose Image"
+        },
+        {
+          "type":"text",
+          "id":"flag_details",
+          "label":"Details"
+        },
+        {
+          "type":"text",
+          "id":"section_heading",
+          "label":"Section Heading"
+        },
+        {
+          "type":"richtext",
+          "id":"section_brief",
+          "label":"Section Brief"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Medical Professional",
+        "settings": [
+          {
+            "type":"image_picker",
+            "id":"medical_professional_image",
+            "label":"Choose Image"
+          },
+          {
+            "type":"text",
+            "id":"medical_professional_name",
+            "label":"Professionalist Name"
+          },
+          {
+            "type":"text",
+            "id":"medical_professional_designation",
+            "label":"Professionalist Designation"
+          },
+          {
+            "type":"richtext",
+            "id":"medical_professional_description",
+            "label":"Professionalist Description"
+          },
+        ]
+      }
+    ],
+    "presets": [
+        {
+          "name": "Leading Professionals"
+        }
+    ]
+  }
+{% endschema %}

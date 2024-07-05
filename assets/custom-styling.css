@@ -44,12 +44,135 @@
     color: rgb(0, 0, 0);
 }
 
+.factors-sub-headline h2 {
+    max-width: 310px;
+}
+
+.plus-icon.active-p2 {
+    opacity: 1;
+    transform: rotate(45deg);
+}
+
+.plus-icon {
+    transition: .4s ease-in-out;
+}
+
+.factors-sub-contnet-link a {
+    display: inline-flex;
+    min-width: 128px;
+    text-align: center;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
+
+.factors-sub-headline h2 {
+    font-weight: 600;
+}
+
+.factors-sub-contnet-link {
+  display: block;
+}
+
+.plus-icon img {
+  display: block;
+}
+
+.rcmnd-bnr img {
+    max-height: 660px;
+}
+
+.mirror-ring {
+  background: none;
+}
+
+#shopify-section-template--16851033718877__rings_slideshow_Fe4R6w .mirror-ring {
+    border-radius: 0px;
+    padding-bottom: 15px;
+    background: linear-gradient(180deg, #FFF 0%, #F1F7FD 7.99%);
+    margin: 0 0 -20px;
+}
+
+#shopify-section-template--16851033718877__perfect_factor_bf6ehP .mirror-ring {
+    background-color: #F1F7FD;
+}
+
+.flg-content p {
+    letter-spacing: 0px;
+}
+
+.flg-content p {
+    letter-spacing: 0px;
+}
+
+#shopify-section-template--16851033718877__health_mission_e3HCRn .mission {
+    padding-bottom: 0px;
+    border-radius: 0px;
+    margin-bottom: -5px;
+}
+
+.policy ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.policy ul li a {
+    color: var(--For-Paragraphs, #344757);
+    font-family: "General Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    display: block;
+    text-transform: capitalize;
+}
+
+.copyright__content {
+    font-size: large;
+}
+
+.policy ul li {
+    display: block;
+    position: relative;
+}
+
+.policy ul li::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 2px;
+    background-color: var(--For-Paragraphs, #344757);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.policy ul li:last-child::after {
+    display: none;
+}
 
 @media (min-width: 1200px) {
     .sizing-kit .tag.desktop {
         display: block;
-   
+    }
     .sizing-kit .tag.mobile {
         display: none;
-    } }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .policy ul {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .policy ul li a {
+      font-size: 11px;
+  }
+  .policy ul li::after {
+      right: -6px;
+      width: 1px;
+  }
 }
