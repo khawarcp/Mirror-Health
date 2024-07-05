@@ -7,6 +7,16 @@
     border-radius: 8px;
     position: relative;
      background-color: rgb(238, 238, 238);
+     padding: 10px;
+     border:  1px solid transparent;
+}
+
+.sizing-kit.kit-parent-active {
+     border:  .1rem solid rgb(var(--color-foreground));
+}
+
+.sizing-kit > label {
+    cursor: pointer;
 }
 
 .button-content {
@@ -153,12 +163,50 @@
     display: none;
 }
 
+.button-content .content {
+    width: calc(100% - 70px);
+}
+
+#ring-sample-kit{
+    display: none;
+}
+
+.sample-kit-heading {
+    font-size: 20px;
+    font-family: 'General Sans';
+}
+
+.sample-kit-text {
+    font-size: 13px;
+    margin-bottom: 10px;
+    font-family: 'General Sans';
+}
+.hme-header {
+    background: transparent;
+}
+
+.scrolled-past-header .hme-header {
+    background: rgb(var(--color-background));
+    background: var(--gradient-background);
+}
+
+
 @media (min-width: 1200px) {
     .sizing-kit .tag.desktop {
         display: block;
     }
     .sizing-kit .tag.mobile {
         display: none;
+    }
+}
+@media screen and (max-width: 989px) {
+    .header {
+        grid-template-areas:
+            "heading icons left-icons";
+        grid-template-columns: 2fr 1fr auto;
+    }
+    .header__heading, .header__heading-link {
+        margin-right: auto;
     }
 }
 

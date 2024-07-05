@@ -1,3 +1,8 @@
+// const sampleInputCheckSelf = document.getElementById("ring-sample-kit");
+// const sampleKiParent = document.querySelector(".sizing-kit");
+// sampleInputCheckSelf.addEventListener("click", function(){
+//     sampleKiParent.classList.add("kit-parent-active")
+// })
 // Hamburger
 
 $(document).ready(function () {

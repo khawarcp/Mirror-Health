@@ -1,46 +1,3 @@
-<!-- PDP Image Slider-->
-   <!-- <div id="in-box-slider" class="owl-carousel owl-theme">
-                                <div class="item">
-                                    <div class="light-rng">
-                                        <a href="#.">
-                                            <img src="images/light-rng-1.png" alt="#">
-                                            <h3>Breathtakingly Light</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="light-rng">
-                                        <a href="#.">
-                                            <img src="images/light-rng-2.png" alt="#">
-                                            <h3>All Week Battery Life</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="light-rng">
-                                        <a href="#.">
-                                            <img src="images/light-rng-1.png" alt="#">
-                                            <h3>Breathtakingly Light</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                
-                            </div> -->
-
-
-<!-- Live Vera Section -->
-   <!-- <section class="live-vera">
-                <div class="container">
-                    <div class="liv-vera-cntnt">
-                        <div class="vera-head">
-                            <h2>Live Vera Ring Demonstration. Apple Health Used to Eliminate Bias</h2>
-                            <a href="#." class="head-buy">Buy Now</a>
-                        </div>
-
-                    </div>
-                </div>
-            </section> -->
-            
 <product-info
   id="MainProduct-{{ section.id }}"
   class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
@@ -250,19 +207,19 @@
                       <div class="sizing-kit-wrapper">
                            {%  assign sample_product = all_products[settings.sample_kit_product] %}
                             <input type="hidden" id="free-product-id" value="{{ sample_product.selected_or_first_available_variant.id }}">
-                            {% if section.sample_heading != blank %}
-                              <h2> {{ section.sample_heading }} </h2>                    
+                            {% if settings.sample_heading != blank %}
+                              <h2 class="sample-kit-heading"> {{ settings.sample_heading }} </h2>                    
                             {% endif %}
-                            {% if section.sample_subheading != blank %}
-                              <p>{{ section.sample_subheading }}</p>                    
+                            {% if settings.sample_subheading != blank %}
+                              <p class="sample-kit-text">{{ settings.sample_subheading }}</p>                    
                             {% endif %}
-                            <div class="sizing-kit">
+                            <button class="sizing-kit">
                               <span class="tag desktop">RECOMMENDED</span>
                                 <input type="radio" id="ring-sample-kit" form="{{ product_form_id }}" name="properties[Ring Size]" value="Size Not Confirmed" >
                                 <label for="ring-sample-kit">
                                   <div class="button-content">
                                     <div class="img">
-                                      <img alt="Sizing Kit" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="sizing-kit-img" style="color: transparent; background: transparent;" src="{{ sample_product.featured_image |  image_url }}">
+                                      <img alt="Sizing Kit" loading="lazy" width="64" height="64" decoding="async" data-nimg="1" class="sizing-kit-img" style="color: transparent; background: transparent;" src="{{ sample_product.featured_image |  image_url}}">
                                     </div>
                                     <div class="content">
                                       <span class="tag mobile" style="position:static;width:fit-content">RECOMMENDED</span>
@@ -271,19 +228,21 @@
                                     </div>
                                   </div>
                                 </label>
-                            </div>
+                            </button>
                         </div>
 
                         <div class="ring-sizes-block">
                           <div class="line-item-property__field">
                             {% if settings.ring_size_heading != blank %}
-                            <h4> {{ settings.ring_size_heading }} </h4>
+                            <h4 class="ring-size-head"> {{ settings.ring_size_heading }} </h4>
                             {% endif %}
-                            {% for size in product.metafields.custom.ring_size_reference.value %}
-                              {% if size.ring_size.value %}
-                              <input type="radio" form="{{ product_form_id }}"  id="your-ring-size-{{ size.ring_size.value }}" name="properties[Ring Size]" value="{{ size.ring_size.value }}"> <label for="your-ring-size-{{ size.ring_size.value }}">{{ size.ring_size.value }}</label>
-                            {% endif %}
-                          {% endfor %}
+                            <div class="ring-size-list">
+                              {% for size in product.metafields.custom.ring_size_reference.value %}
+                                {% if size.ring_size.value %}
+                                <input type="radio" class="ring-sizess" form="{{ product_form_id }}"  id="your-ring-size-{{ size.ring_size.value }}" name="properties[Ring Size]" value="{{ size.ring_size.value }}"> <label for="your-ring-size-{{ size.ring_size.value }}">{{ size.ring_size.value }}</label>
+                              {% endif %}
+                            {% endfor %}
+                            </div>
                           </div>
                         </div>
                     </div>

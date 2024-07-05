@@ -1,7 +1,7 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/header-logo.svg",
-    "logo_width": 90,
+    "logo_width": 60,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -142,7 +142,7 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#344757",
           "button": "#1d95ff",
           "button_label": "#ffffff",
           "secondary_button_label": "#1d95ff",

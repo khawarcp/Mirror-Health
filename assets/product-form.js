@@ -48,7 +48,7 @@ if (!customElements.get('product-form')) {
 
             // ADDING FREE PRODUCT SAMPLE SIZE KIT
             const sampleInputCheck = document.getElementById("ring-sample-kit");
-            if(sampleInputCheck.checked){
+            if(sampleInputCheck.checked){        
               freeSampleKitProduct();
             }
 
@@ -141,8 +141,7 @@ if (!customElements.get('product-form')) {
 
 function freeSampleKitProduct(){
   // adding free product to cart
-    const sampleProductId = document.getElementById("free-product-id").value;
-    console.log(sampleProductId)
+    const sampleProductId = document.getElementById("free-product-id").value;    
     let sampleFormData = {
       'items': [{
         'id': sampleProductId,
@@ -166,4 +165,8 @@ function freeSampleKitProduct(){
     .catch((error) => {
       console.error('Error:', error);
     });
+}
+
+function kitParentActive(){
+  alert("aba")
 }

@@ -4,19 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
@@ -35,6 +22,8 @@
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
+        "button_text": "Buy Now",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
         "enable_country_selector": true,
@@ -42,8 +31,8 @@
         "enable_customer_avatar": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     }
   },

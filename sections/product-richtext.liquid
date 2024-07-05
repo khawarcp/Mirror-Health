@@ -1,0 +1,43 @@
+<!-- Live Vera Section -->
+<section class="live-vera">
+    <div class="container">
+        <div class="liv-vera-cntnt">
+            <div class="vera-head">
+                {% if section.settings.heading != blank %}
+                    <h2> {{ section.settings.heading }}</h2>
+                {% endif %}
+                {% render 'anchor-snippet', button_text: section.settings.button_text, button_url: section.settings.button_url, class: 'head-buy' %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Product Richtext",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Live Vera Ring Demonstration. Apple Health Used to Eliminate Bias"
+            },
+            {
+                "type": "header",
+                "content": "Button"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "Learn More"
+            },
+            {
+                "type": "url",
+                "id": "button_url",
+                "label": "Button URL"
+            }
+        ]
+    }
+{% endschema %}

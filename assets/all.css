@@ -455,6 +455,7 @@ header#myHeader {
     justify-content: center;
     align-items: center;
     width: 102px;
+    padding: 8px 10px;
 }
 
 .video-box {
@@ -675,7 +676,7 @@ header#myHeader {
     text-align: center;
     margin-top: 129px;
     position: relative;
-    z-index: 9;
+    z-index: 1;
 }
 
 .hme-bnr-text h1 {
@@ -2564,10 +2565,11 @@ ul.tabs li:last-child {
     margin: 32px 0 !important;
 }
 .button-content .img img {
-    width: 100%;
+    width: 65px;
     max-width: 100%;
-    min-height: 100px;
+    min-height: 65px;
     object-fit: cover;
+    border-radius: 10px;;
 }
 .content h5 {
     color: var(--For-Headings, #1D1D1F);
@@ -2586,19 +2588,17 @@ ul.tabs li:last-child {
 .content .richtext-content p {
     color: var(--For-Paragraphs, #344757);
     font-family: "General Sans";
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.36px;
 }
-.sizing-kit {
-    padding: 0px 10px 15px !important;
-}
+
 .tag.desktop {
     color: var(--For-Paragraphs, #344757);
     font-family: General Sans;
-    font-size: 18px !important;
+    font-size: 12px !important;
     font-style: normal;
     font-weight: 400 !important;
     line-height: normal;
@@ -2636,6 +2636,7 @@ ul.tabs li:last-child {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .ring-sizes-block .line-item-property__field input {
@@ -2694,3 +2695,12 @@ button#ProductSubmitButton-template--16851034112093__main {
     width: 100%;
     max-width: 556px !important;
 } */
+
+.inbox-slider-wrapper {
+    padding-top: 60px;
+}
+
+.light-rng a h3 {
+    font-family: 'General Sans';
+    margin-top: 16px;
+}

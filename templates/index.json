@@ -7,7 +7,7 @@
         "section_brief": "<p>Peace of mind about your health from just a ring on your finger<\/p>",
         "image": "shopify:\/\/shop_images\/hme-bnr.png",
         "banner_bg_heading": "Introducing",
-        "button_url": "#.",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
         "button_text": "Buy Now",
         "offer_text": "Just $349 or $29\/mo.*",
         "subscription_text": "No Subscript cost."
@@ -176,7 +176,7 @@
       "settings": {
         "section_heading": "Know the Status of Your Health at All Times",
         "section_brief": "<p>Vera Ring gives you a 360 degree view of your health through 6 main health categories. Know about the status of your heart, respiratory system, sleep cycles, immune system, stress levels, and activity, 24\/7.<\/p>",
-        "button_url": "#",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
         "button_text": "Buy Now"
       }
     },
@@ -293,7 +293,7 @@
       "settings": {
         "section_heading": "Learn About Ailments, Before They Become Real Issues",
         "section_brief": "<p>Our advanced Artificial Intelligence algorithms learn about your health and can predict small variabilities in advance before they become real issues. Additionally, get emergency alerts in times of extreme drops or spikes in vital readings and share with your family or friends.<\/p>",
-        "button_url": "#.",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
         "button_text": "Buy Now",
         "emergency_alerts": "Receive Emergency Alerts",
         "alert_link": "#.",
@@ -309,7 +309,7 @@
       "settings": {
         "section_heading": "Zero Subscription Cost",
         "section_brief": "<p>We believe when you buy products, it's yours to keep by now.<\/p>",
-        "button_url": "#.",
+        "button_url": "shopify:\/\/products\/the-mirror-ring-1",
         "button_text": "Buy Now"
       }
     },

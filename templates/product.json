@@ -69,6 +69,161 @@
         "image": "shopify:\/\/shop_images\/in-box-ban-img.png"
       }
     },
+    "product-images-slider": {
+      "type": "product-images-slider",
+      "blocks": {
+        "item_fYAUzh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Breathtakingly_Light.jpg",
+            "heading": "Breathtakingly Light",
+            "button_link": ""
+          }
+        },
+        "item_R3D6hx": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/All_Week_Battery_Life.jpg",
+            "heading": "All Week Battery Life",
+            "button_link": ""
+          }
+        },
+        "item_VWBWtg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Breathtakingly_Light.jpg",
+            "heading": "Breathtakingly Light",
+            "button_link": ""
+          }
+        },
+        "item_zLcKCK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/All_Week_Battery_Life.jpg",
+            "heading": "All Week Battery Life",
+            "button_link": ""
+          }
+        },
+        "item_LFHV6y": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Breathtakingly_Light.jpg",
+            "heading": "Breathtakingly Light",
+            "button_link": ""
+          }
+        },
+        "item_wfVFVf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/All_Week_Battery_Life.jpg",
+            "heading": "All Week Battery Life",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_fYAUzh",
+        "item_R3D6hx",
+        "item_VWBWtg",
+        "item_zLcKCK",
+        "item_LFHV6y",
+        "item_wfVFVf"
+      ],
+      "settings": {
+      }
+    },
+    "product-richtext": {
+      "type": "product-richtext",
+      "settings": {
+        "heading": "Live Vera Ring Demonstration. Apple Health Used to Eliminate Bias",
+        "button_text": "Learn More",
+        "button_url": ""
+      }
+    },
+    "specifications_table_aa8Vhb": {
+      "type": "specifications-table",
+      "blocks": {
+        "block_XaVWXp": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Dimensions",
+            "specification_description": "<p>~2.3mm Thick, ~7.5mm Wide<\/p>"
+          }
+        },
+        "block_WdniGt": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Weight",
+            "specification_description": "<p>5.2 To 8.5 Grams (Depending on Size)<\/p>"
+          }
+        },
+        "block_mcR4JL": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Battery life",
+            "specification_description": "<p>~7 Days per Charge, The Charging Case Holds 30 Additional Days Worth of Battery Life (And is Rechargeable)<\/p>"
+          }
+        },
+        "block_mWrgHb": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Connectivity details",
+            "specification_description": "<p>Bluetooth 4.0<\/p>"
+          }
+        },
+        "block_4ThhM4": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Colors",
+            "specification_description": "<p>Vera Blue, Pure White, Onyx Black, Silver, Gold, Rose Gold<\/p>"
+          }
+        },
+        "block_7LkxiM": {
+          "type": "block",
+          "settings": {
+            "specification_text": "PPG Sensors",
+            "specification_description": "<p>Green, Red, Infrared<\/p>"
+          }
+        },
+        "block_aQmVY4": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Other Sensors",
+            "specification_description": "<p>Skin Temperature, 6-Axis Accelerometer<\/p>"
+          }
+        },
+        "block_E37pWg": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Vitals Monitored",
+            "specification_description": "<p>Beats Per Minute (BPM), Heart Rate Variability (HRV), Resting Heart Rate (RHR), Blood Pressure (BP* - Coming Soon), Sleep Duration, Light Sleep, Deep Sleep, Rapid Eye Movement (REM) Sleep, Blood Oxygen Saturation (SpO2), VO2 Max, Respiratory Rate, Skin Temperature (In Celsius or Fahrenheit), Fertility Tracking (Coming Soon)<\/p>"
+          }
+        },
+        "block_9VWGw8": {
+          "type": "block",
+          "settings": {
+            "specification_text": "Additional Features",
+            "specification_description": "<p>Vera Health Forum, Family Health Sharing, Health Recommendations, Health Shock Alerts, Waterproof, Shock Resistant<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_XaVWXp",
+        "block_WdniGt",
+        "block_mcR4JL",
+        "block_mWrgHb",
+        "block_4ThhM4",
+        "block_7LkxiM",
+        "block_aQmVY4",
+        "block_E37pWg",
+        "block_9VWGw8"
+      ],
+      "settings": {
+        "section_bg": "shopify:\/\/shop_images\/specifications-bg.png",
+        "button_url": "#ProductSubmitButton-template--16849015799901__main",
+        "button_text": "Buy Now"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -91,6 +246,9 @@
   "order": [
     "main",
     "product-box",
+    "product-images-slider",
+    "product-richtext",
+    "specifications_table_aa8Vhb",
     "related-products"
   ]
 }

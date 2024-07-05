@@ -369,5 +369,21 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% if settings.sample_kit_product != empty and request.page_type == 'product' %}      
+    <script type="text/javascript">
+          const sampleInputCheckSelf = document.getElementById("ring-sample-kit");
+          const sampleKiParent = document.querySelector(".sizing-kit");
+          sampleInputCheckSelf.addEventListener("click", function(){
+              sampleKiParent.classList.add("kit-parent-active")
+          });
+          const ringSizes = document.querySelectorAll(".ring-sizess");
+          ringSizes.forEach(item => {
+              item.addEventListener("click", function(){
+                sampleKiParent.classList.remove("kit-parent-active")
+              })
+          });
+    </script>
+    {% endif %}
   </body>
 </html>
